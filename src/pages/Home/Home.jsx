@@ -53,7 +53,7 @@ const Home = () => {
   <div className="header">
     <div className="row">
 
-      <div className="col header-img col-xs-12 col-sm-12 col-md-12 ">
+      <div className="col header-img ">
       <img src={HeaderImg}  alt=""  className='home-header img-fluid'/>
         <div className="head-top">
         <h1 className='head-top-text'>Inclusive care for children with special needs</h1>
