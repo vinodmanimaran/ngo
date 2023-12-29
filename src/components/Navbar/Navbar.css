@@ -1,0 +1,85 @@
+.nav-bar {
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    background-color: #fff;
+    color: white; 
+    z-index: 1000; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+
+.nav-logo{
+  font-size: 20px;
+  font-weight: bold;
+}
+.nav-line{
+    border: 1px solid gray;
+    max-width: 100%;
+}
+
+.donate-btn{
+    border: none;
+    margin-left: 15em;
+    background-color: #1D2130;
+    color: white;
+    text-align: center;
+    width: 8rem;
+    padding: 0.5rem;
+    margin-top: 0.5em;
+    border-radius: 4px;
+}
+
+.nav-item{
+    color: #525560 !important;
+}
+
+.link{
+    color:#525560;
+    text-decoration: none   ;
+}
+
+.nav-item:hover{
+    color: black;
+    cursor: pointer;
+}
+
+
+.sidebar {
+    display: none; /* Initially hide the sidebar */
+  }
+  
+
+
+  @media only screen and (max-width: 767px) {
+    /* Show the sidebar only on screens with a width of 767 pixels or less */
+    .sidebar {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 200px;
+      background-color: #f8f9fa; /* Set your preferred background color */
+      padding-top: 60px; /* Adjust the top padding as needed */
+      z-index: 1;
+    }
+  
+    .sidebar-link {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #343a40; /* Set your preferred text color */
+    }
+  
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+  
