@@ -40,9 +40,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`container-fluid nav-bar ${isSidebarOpen ? 'sidebar-open' : ''}`}>
+    <div className={`container-fluid nav-bar navbar navbar-expand-lg  ${isSidebarOpen ? 'sidebar-open' : ''}`}>
       <div className="row d-sm-none">
-        <div className="col col-xxl-3 nav-logo">
+        <div className="col col-xxl-3  nav-logo">
           <h5 style={{color:"black"}}>Vinod Kumar</h5>
         </div>
 
