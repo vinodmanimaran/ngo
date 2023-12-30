@@ -42,12 +42,12 @@ const Navbar = () => {
   return (
     <div className={`container-fluid nav-bar navbar navbar-expand-lg  ${isSidebarOpen ? 'sidebar-open' : ''}`}>
       <div className="row d-sm-none">
-        <div className="col col-xxl-3  nav-logo">
+        <div className="col col-xxl-3  col-4 border-primary    nav-logo">
           <h5 style={{color:"black"}}>Vinod Kumar</h5>
         </div>
 
         {/* Hamburger Menu Icon */}
-        <div className="col d-lg-none">
+        <div className="col d-lg-none col-8 border-primary ">
           <button className='hamburger-icon' onClick={OpenSidebar}>
             ☰
           </button>
@@ -93,31 +93,34 @@ const Navbar = () => {
 
       {/* Sidebar */}
       {isSidebarOpen && (
-        <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
-          <button className='close-btn' onClick={closeSidebar}>
-            ✕
-          </button>
-          <div className="col col-xxl-3 nav-logo">
-          <h5 style={{color:"black",marginLeft:"10%"}}>Vinod Kumar</h5>
-        </div>
-          <button className='donate-btn mx-3 my-4'>Donate</button>
-
-          <Link to="/" className='sidebar-link'>
-            Home
-          </Link>
-          <Link to="/aboutus" className='sidebar-link'>
-            About us
-          </Link>
-          <Link to="/whatwedo" className='sidebar-link'>
-            What we do
-          </Link>
-          <Link to="/media" className='sidebar-link'>
-            Media
-          </Link>
-          <Link to="/contact" className='sidebar-link'>
-            Contact
-          </Link>
-        </div>
+       <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+       <button className='close-btn' onClick={closeSidebar}>
+         ✕
+       </button>
+       
+       <div className="col col-sm-1 nav-logo">
+         <h5 style={{color: "black", marginLeft: "10%"}}>Vinod Kumar</h5>
+       </div>
+     
+       <button className='donate-btn mx-3 my-4'>Donate</button>
+     
+       <Link to="/" className='sidebar-link border-bottom border-primary py-2'>
+         Home
+       </Link>
+       <Link to="/aboutus" className='sidebar-link border-bottom border-primary py-2'>
+         About us
+       </Link>
+       <Link to="/whatwedo" className='sidebar-link border-bottom border-primary py-2'>
+         What we do
+       </Link>
+       <Link to="/media" className='sidebar-link border-bottom border-primary py-2'>
+         Media
+       </Link>
+       <Link to="/contact" className='sidebar-link border-bottom border-primary py-2'>
+         Contact
+       </Link>
+     </div>
+     
       )}
     </div>
   );

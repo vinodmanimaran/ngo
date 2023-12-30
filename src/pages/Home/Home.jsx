@@ -48,21 +48,22 @@ const Home = () => {
     <>
         <Navbar/>
 
-     <div className="container-fluid">
+     <div className="container-fluid ">
 
-  <div className="header">
-    <div className="row">
 
-      <div className="col header-img ">
+ 
+    <div className="row main-header">
+
+      <div className="col header-img col-12 ">
       <img src={HeaderImg}  alt=""  className='home-header img-fluid'/>
         <div className="head-top">
         <h1 className='head-top-text'>Inclusive care for children with special needs</h1>
         <div className="row">
-          <div className="col">
+          <div className="col col-5">
           <button className='whatwedo'>What  we do</button>
 
           </div>
-          <div className="col play">
+          <div className="col play  col- mx-1 my-2">
             
             <h3 className='play-text'>
             <span>
@@ -77,14 +78,14 @@ const Home = () => {
         </div>
         
         <div className="row below">
-          <div className="col col-xxl-3">
+          <div className="col col-xxl-3 col-3">
             <p className='below-text'>230 childrens under our care </p>
 
           </div>
-          <div className="col divide-line col-xxl-7">
+          <div className="col divide-line col-xxl-7 col-7 ">
             <hr className="divide" />
           </div>
-          <div className="col col-xxl-2">
+          <div className="col col-xxl-2 col-2">
             <p className='below-text'>58 donations collected</p>
           </div>
         </div>
@@ -94,21 +95,21 @@ const Home = () => {
 
    
     </div>
-  </div>
+  
 
 
 <div className="about-content">
-  <div className="row  row-sm-4">
-    <div className="col col-xxl-1 ">
+  <div className="row">
+    <div className="col col-xxl-1 col-6">
       <hr  className='about-title-line'/>
     </div>
-    <div className="col col-sm-5">
+    <div className="col col-6">
     <h3 className='about-title'>Know About us</h3>
 
     </div>
   </div>
-  <div className="row row-xs-10">
-    <div className="col content col-sm-"> 
+  <div className="row">
+    <div className="col content col-xxl-6 col-12"> 
 
 <h1>We provide a place for children with special needs</h1>
 <div className="para">
@@ -121,7 +122,7 @@ const Home = () => {
 </div>
 
 
-    <div className="col">
+    <div className="col   col-xxl-4 col-12">
       <img src={About} alt='about' className='about-img'/>
     </div>
   </div>
@@ -131,28 +132,28 @@ const Home = () => {
 
 <div className=" supporter">
 <div className="row">
-  <div className="col col-xxl-2">
+  <div className="col col-xxl-2  col-xxl-1">
   <h3 className='support-title'>Our Supporters</h3>
 
   </div>
-  <div className="col col-xxl-10">
+  <div className="col col-xxl-6">
     <hr/>
   </div>
 </div>
-<div className="row">
-<div className="col logo">
-    <img src={Logo} alt='suppporter'/>
+<div className="row ">
+<div className="col logo col-2 col-xxl-1">
+    <img src={Logo} alt='suppporter' className='sup-logo'/>
   </div>
-  <div className="col logo">
-    <img src={Logo} alt='suppporter'/>
-  </div><div className="col logo">
-    <img src={Logo} alt='suppporter'/>
-  </div><div className="col logo">
-    <img src={Logo} alt='suppporter'/>
-  </div><div className="col logo">
-    <img src={Logo} alt='suppporter'/>
-  </div><div className="col logo">
-    <img src={Logo} alt='suppporter'/>
+  <div className="col logo col-2  col-xxl-1">
+    <img src={Logo} alt='suppporter' className='sup-logo'/>
+  </div><div className="col logo col-2 col-xxl-1" >
+    <img src={Logo} alt='suppporter' className='sup-logo'/>
+  </div><div className="col logo col-2 col-xxl-1" >   
+    <img src={Logo} alt='suppporter' className='sup-logo'/>
+  </div><div className="col logo col-2 col-xxl-1">
+    <img src={Logo} alt='suppporter' className='sup-logo'/>
+  </div><div className="col logo col-2 col-xxl-1">
+    <img src={Logo} alt='suppporter' className='sup-logo'/>
   </div>  
 </div>
   
@@ -161,16 +162,16 @@ const Home = () => {
 <div className="services">
 
   <div className="row">
-    <div className="col col-xxl-3">
+    <div className="col col-xxl-3 col-6">
 <hr />
     </div>
-    <div className="col">
+    <div className="col col-6">
     <h3 className='services-title'>What we do</h3>
 
     </div>
   </div>
   <div className="row">
-  <div className="col">
+  <div className="col col-12 col-xxl-6 " style={{border:"1px solid black"}}>
 <h1 className='main-service-title'>Some services we provide for our children</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 
@@ -191,7 +192,7 @@ const Home = () => {
 
 
 
-  <div className="col">
+  <div className="col  col-12 col-xxl-6">
 <img src={Kid}  alt='service' className="service-img"/>
   </div>
   </div>
@@ -200,11 +201,11 @@ const Home = () => {
 
 <div className="projects">
 <div className="row project-card">
-    <div className="col col-xxl-3">
+    <div className="col col-xxl-3 col-6 ">
 <hr />
 
     </div>
-    <div className="col">
+    <div className="col col-6">
     <h3>Projects we have done</h3>
     </div>
 
@@ -212,7 +213,7 @@ const Home = () => {
   <h1 className='project-title'>We are creating a place where children with special needs can thrive</h1>
 
   <div className="row">
-    <div className="col">
+    <div className="col col-12 col-xxl-4">
       <img src={Project1} alt='project' className='project'/>
 
   <div className="project-details">
@@ -221,14 +222,14 @@ const Home = () => {
     <button className='learnmore'>Learn More</button>
   </div>
     </div>
-    <div className="col">
+    <div className="col col-12 col-xxl-4">
       <img src={Project2} alt='project' className='project'/>
       <div className="project-details">
     <h3 className='project-details-name'>Weekly excursions</h3>
     <p className='project-details-para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
     <button className='learnmore'>Learn More</button>
   </div>
-    </div> <div className="col">
+    </div> <div className="col col-12 col-xxl-4">
     <img src={Project3} alt='project' className='project'/>
 
     <div className="project-details">
@@ -241,37 +242,40 @@ const Home = () => {
 
 <div className="donation-chart">
       <div className="row">
-        <div className="col">
+        <div className="col col-4 col-xxl-6">
+          <div className="chart-content">
           <h5 className="donation-title">How we spend your donations and where it goes</h5>
           <p className="donation-para">
             We understand that when you make a donation, you want to know exactly where your money is going, and we pledge
             to be transparent.
           </p>
+          </div>
+         
         </div>
-        <div className="col pie">
+        <div className="col col-5 col-xxl-6 pie">
           <Pie data={data} key={Date.now()} options={options} className='pie'/>
         </div>
       </div>
 
       <div className="row-data">
         <div className="row">
-        <div className="col ">
+        <div className="col col-3 ">
     <span className='color child-care-home'></span>
     <p>40% child care home</p>
   </div>
-  <div className="col">
+  <div className="col col-3">
     <span className='color cleanliness-program'></span>
     <p>35% cleanliness program</p>
   </div>
-  <div className="col">
+  <div className="col col-3">
     <span className='color helping-people'></span>
     <p>10% helping people</p>
   </div>
-  <div className="col">
+  <div className="col col-3">
     <span className='color excursions'></span>
     <p>10% excursions</p>
   </div>
-  <div className="col">
+  <div className="col col-3">
     <span className='color feeding-the-poor'></span>
     <p>5% feeding the poor</p>
   </div>
@@ -282,7 +286,7 @@ const Home = () => {
     </div>
     <div className="cta-image">
   <div className="row position-relative">
-    <div className="col">
+    <div className="col col-12 col-xxl-12">
       <img src={CTA} alt='cta' className='cta-img'/>
       <div className="cta-buttons">
       <h2 className='cta-title'>You can contribute to provide a place for children with special needs!</h2>

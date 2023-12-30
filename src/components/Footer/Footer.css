@@ -36,3 +36,15 @@
     text-decoration: none;
 }
 
+
+@media (max-width: 575.98px){
+    .footer{
+        width: 53rem;
+    }
+
+    .newsletter{
+        width: 30rem;
+        margin-left: 25%;
+        }
+}
+
