@@ -6,10 +6,7 @@ const Navbar = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
 
-  const toggleSidebar = () => {
-    setSidebarOpen((prev) => !prev);
-  };
-
+ 
   const OpenSidebar = () => {
     setSidebarOpen(true);
   };
@@ -39,6 +36,22 @@ const Navbar = () => {
     };
   }, []);
 
+// best way to track the sidebar with the help of localstorage
+
+
+  useEffect(() => {
+    localStorage.setItem('sidebarOpen', JSON.stringify(isSidebarOpen));
+  }, [isSidebarOpen]);
+
+  useEffect(() => {
+    const savedSidebarState = localStorage.getItem('sidebarOpen');
+    if (savedSidebarState !== null) {
+      setSidebarOpen(JSON.parse(savedSidebarState));
+    }
+  }, []);
+
+
+
   return (
     <div className={`container-fluid nav-bar navbar   ${isSidebarOpen ? 'sidebar-open' : ''}`}>
       <div className="row ">
@@ -55,28 +68,28 @@ const Navbar = () => {
 
         {!isMobile && (
           <>
-            <div className="col gx-1  col-xxl-1 nav-item desktop">
+            <div className="col gx-1  col-xxl-1 nav-item">
               <Link to="/" className='link'>
                 <p>Home</p>
               </Link>
             </div>
-            <div className="col  gx-1    col-xxl-1 nav-item desktop">
+            <div className="col  gx-1    col-xxl-1 nav-item">
               <Link to="/aboutus" className='link'>
                 <p>About us</p>
 
               </Link>
             </div>
-            <div className="col   gx-1   col-xxl-1  nav-item desktop">
+            <div className="col   gx-1   col-xxl-1  nav-item">
               <Link to="/whatwedo" className='link'>
                 <p>What we do</p>
               </Link>
             </div>
-            <div className="col  gx-1   col-xxl-1  nav-item  desktop">
+            <div className="col  gx-1   col-xxl-1  nav-item">
               <Link to="/media" className='link'>
                 <p>Media</p>
               </Link>
             </div>
-            <div className="col  gx-1   col-xxl-1  nav-item desktop">
+            <div className="col  gx-1   col-xxl-1  nav-item">
               <Link to="/contact" className='link'>
                 <p>Contact</p>
               </Link>
