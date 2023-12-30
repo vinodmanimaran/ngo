@@ -2,17 +2,40 @@
     background-color: #F2C94C;
     margin: 3em;
     padding: 2rem;  
+    width: 30rem;
+    margin-left: 10rem;
 }
 
+.home-page{
+  overflow: hidden;
+}
+.date-event-no{
+  font-size: 40px;
+}
+
+.cta-image{
+  margin: 1rem;
+  width: 80rem;
+  transform: translateX(5%);
+}
 .donation-chart{
     background-color: #000000;
     min-height: 20em;
+    width: 88rem;
 }
 
 .services{
     background-color: #FCEDC6;
     min-height: 30em;
 
+}
+
+.supporters{
+  padding: 1rem;
+ transform: translateX(10%);
+}
+.supporter{
+  margin: 1rem;
 }
 .below{
     position: absolute;
@@ -147,6 +170,7 @@ width:30rem;
 
 .projects{
     padding: 3rem;
+    margin: 1rem;
 }
 
 .project-title{
@@ -295,24 +319,26 @@ width:30rem;
   }
 
   .title-event{
-    margin-top: -70%;
+    font-size: 24px;
+    margin-top: -30%;
+    margin-left: -6%;
 }
 
 .event-hr{
-margin-top: -60%;
-width: 80%;
+margin-top: -90%;
+width: 70%;
+margin-left: 6.5rem;
+
 }
 
 .event-name{
-    margin-top: -35%;
+    margin-top: -20%;
     font-size: 20px;
+    margin-left:2rem;
 }
 
 
-.event-icon{
-    margin-top: -75%;
-    cursor: pointer;
-}
+
 
 .circle-icon {
     display: flex;
@@ -324,19 +350,30 @@ width: 80%;
     background-color: white;
     border-radius: 50%;
     margin-top: -30%;
+    margin-left: 25rem;
   }
-
+.date-event-no,.date-event-mon{
+margin-left: -5%;
+}
 
   @media (max-width: 575.98px) {
     .header-img{
    margin-left: 5rem;
    margin-top: 5rem;
-   max-width: 100%;
-
+   /* max-width: 100%; */
    display: none;
-    }
 
-    
+    }
+.title-event{
+  margin-top: -7rem;
+  margin-left: 5rem;
+  margin-bottom: 2rem !important;
+}
+.event-name{
+  margin-left: 2rem;
+  margin-top: -40px;
+  /* font-size: 18px; */
+}
 
     .head-top{
         margin-left: 15%;
@@ -377,7 +414,7 @@ margin: 3rem !important;
   }
 
   .services{
-    width:57rem;
+    width:66rem;
   }
 
   .about-content{
@@ -403,7 +440,7 @@ margin: 3rem !important;
   }
 
   .donation-chart{
-    width: 52rem;
+    width: 65rem;
   }
 
   .chart-content{
@@ -411,7 +448,7 @@ margin: 3rem !important;
     margin-left: -18%;
   }
 .cta-image{
-    width: 54rem;
+    width: 65rem;
     margin-left: -10%;
 }
 
@@ -422,14 +459,33 @@ margin-left: -3%;
 
 .pie{
     margin-top: -2%;
+    transform:translateY(-60%) !important ;
+    transform: translateX(60%) !important;
 }
 
 .main-header{
-    width:50rem !important;
+    width:65rem !important;
     height: 50rem;
     margin-top: 30%;
     transform: translateX(2%);
     border: 1px solid black;
+}
+.circle-icon{
+  margin-top: -55%;
+  margin-left: 9rem;
+}
+.event-card{
+  width: 50rem
+}
+
+.date-event-no,.date-event-mon{
+  margin-left: -30px;
+}
+.home-page{
+  overflow: visible;
+}
+.desktop{
+  display: none;
 }
   }
   

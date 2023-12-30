@@ -40,51 +40,50 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`container-fluid nav-bar navbar navbar-expand-lg  ${isSidebarOpen ? 'sidebar-open' : ''}`}>
-      <div className="row d-sm-none">
-        <div className="col col-xxl-3  col-4 border-primary    nav-logo">
+    <div className={`container-fluid nav-bar navbar   ${isSidebarOpen ? 'sidebar-open' : ''}`}>
+      <div className="row ">
+        <div className="col col-xxl-2  col-1     nav-logo">
           <h5 style={{color:"black"}}>Vinod Kumar</h5>
         </div>
 
         {/* Hamburger Menu Icon */}
-        <div className="col d-lg-none col-8 border-primary ">
+        <div className="col d-lg-none  col-8  ">
           <button className='hamburger-icon' onClick={OpenSidebar}>
             ☰
           </button>
         </div>
 
-        {/* Conditionally render navigation items based on screen size */}
         {!isMobile && (
           <>
-            <div className="col col-xxl-1 nav-item">
+            <div className="col gx-1  col-xxl-1 nav-item desktop">
               <Link to="/" className='link'>
                 <p>Home</p>
               </Link>
             </div>
-            <div className="col col-xxl-1 nav-item">
+            <div className="col  gx-1    col-xxl-1 nav-item desktop">
               <Link to="/aboutus" className='link'>
                 <p>About us</p>
 
               </Link>
             </div>
-            <div className="col col-xxl-1 nav-item">
+            <div className="col   gx-1   col-xxl-1  nav-item desktop">
               <Link to="/whatwedo" className='link'>
                 <p>What we do</p>
               </Link>
             </div>
-            <div className="col col-xxl-1 nav-item">
+            <div className="col  gx-1   col-xxl-1  nav-item  desktop">
               <Link to="/media" className='link'>
                 <p>Media</p>
               </Link>
             </div>
-            <div className="col col-xxl-1 nav-item">
+            <div className="col  gx-1   col-xxl-1  nav-item desktop">
               <Link to="/contact" className='link'>
                 <p>Contact</p>
               </Link>
             </div>
 
-            <div className="col d-none d-lg-block">
-              <button className='donate-btn '>Donate</button>
+            <div className="col col-xxl-1  d-sm-none">
+              <button className='donate-btn donate-lg '>Donate</button>
             </div>
           </>
         )}
@@ -104,16 +103,16 @@ const Navbar = () => {
      
        <button className='donate-btn mx-3 my-4'>Donate</button>
      
-       <Link to="/" className='sidebar-link border-bottom border-primary py-2'>
+       <Link to="/" className='sidebar-link border-bottom py-2'>
          Home
        </Link>
-       <Link to="/aboutus" className='sidebar-link border-bottom border-primary py-2'>
+       <Link to="/aboutus" className='sidebar-link border-bottom  py-2'>
          About us
        </Link>
-       <Link to="/whatwedo" className='sidebar-link border-bottom border-primary py-2'>
+       <Link to="/whatwedo" className='sidebar-link border-bottom  py-2'>
          What we do
        </Link>
-       <Link to="/media" className='sidebar-link border-bottom border-primary py-2'>
+       <Link to="/media" className='sidebar-link border-bottom  py-2'>
          Media
        </Link>
        <Link to="/contact" className='sidebar-link border-bottom border-primary py-2'>

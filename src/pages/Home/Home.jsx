@@ -48,7 +48,7 @@ const Home = () => {
     <>
         <Navbar/>
 
-     <div className="container-fluid ">
+     <div className="container-fluid  home-page">
 
 
  
@@ -140,8 +140,8 @@ const Home = () => {
     <hr/>
   </div>
 </div>
-<div className="row ">
-<div className="col logo col-2 col-xxl-1">
+<div className="row supporters ">
+<div className="col logo gx-1 col-2 col-xxl-1">
     <img src={Logo} alt='suppporter' className='sup-logo'/>
   </div>
   <div className="col logo col-2  col-xxl-1">
@@ -252,7 +252,7 @@ const Home = () => {
           </div>
          
         </div>
-        <div className="col col-5 col-xxl-6 pie">
+        <div className="col col-5 gx-1   col-xxl-6 pie">
           <Pie data={data} key={Date.now()} options={options} className='pie'/>
         </div>
       </div>
@@ -309,13 +309,13 @@ const Home = () => {
       <hr  className='event-title-line'/>
     </div>
    
-  </div>  <div className="row">
-  <div className="col event-card">
+  </div>  <div className="row  event-cards">
+  <div className="col col-6  event-card">
       <div className="date">
         <div className="row">
-          <div className="col">
-            <h1>19th</h1>
-            <h3>Apr</h3>
+          <div className="col ">
+            <h1 className='date-event-no'>19th</h1>
+            <h3 className='date-event-mon'>Apr</h3>
           </div>
         </div>
       </div>
@@ -325,7 +325,7 @@ const Home = () => {
             <div className="col">
               {/* Empty space on the left */}
             </div>
-            <div className="col">
+            <div className="col col-12">
               <h3 className='title-event'>Next Events</h3>
             </div>
             <div className="col col-xxl-4">
@@ -337,7 +337,7 @@ const Home = () => {
       <div className="row">
         <div className="col">
         </div>
-        <div className="col">
+        <div className="col col-10">
           <h2 className='event-name'>A day with our wonderful children</h2>
         </div>
         <div className="col">
@@ -347,12 +347,13 @@ const Home = () => {
         </div>
       </div>
     </div>
-    <div className="col event-card">
+
+    <div className="col col-6  event-card">
       <div className="date">
         <div className="row">
-          <div className="col">
-            <h1>25th</h1>
-            <h3>Apr</h3>
+          <div className="col ">
+            <h1 className='date-event-no'>19th</h1>
+            <h3 className='date-event-mon'>Apr</h3>
           </div>
         </div>
       </div>
@@ -362,7 +363,7 @@ const Home = () => {
             <div className="col">
               {/* Empty space on the left */}
             </div>
-            <div className="col">
+            <div className="col col-12">
               <h3 className='title-event'>Next Events</h3>
             </div>
             <div className="col col-xxl-4">
@@ -373,10 +374,9 @@ const Home = () => {
       </div>
       <div className="row">
         <div className="col">
-          {/* Empty space on the left */}
         </div>
-        <div className="col">
-          <h2 className='event-name'>Seminar: Caring for children with autism</h2>
+        <div className="col col-10">
+          <h2 className='event-name'>A day with our wonderful children</h2>
         </div>
         <div className="col">
           <div className="circle-icon">
@@ -385,6 +385,7 @@ const Home = () => {
         </div>
       </div>
     </div>
+   
   </div>
 </div>
    </div>

@@ -7,12 +7,12 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="row">
-        <div className="col-md-3 col-3 col-xxl-2">
+        <div className=" col-3 col-xxl-2">
           <Link to="/" className="f-link">
             <h5 className='logo'>Vinod Kumar</h5>
           </Link>
         </div>
-        <div className="col-md-3 col-3 col-xxl-2">
+        <div className=" col-3 col-xxl-2">
           <h4 className="link-title">Short-cuts</h4>
           <Link to="/" className='f-link'>
             <p className="footer-link">Home</p>
@@ -30,7 +30,7 @@ const Footer = () => {
             <p className="footer-link">Contact</p>
           </Link>
         </div>
-        <div className="col-md-3 col-3 col-xxl-2">
+        <div className=" col-3 col-xxl-2">
           <h4 className="link-title">More</h4>
           <Link to="/projects" className='f-link'>
             <p className="footer-link">Projects</p>
@@ -45,7 +45,7 @@ const Footer = () => {
             <p className="footer-link">Blog</p>
           </Link>
         </div>
-        <div className="col-md-3 col-3 col-xxl-2">
+        <div className=" col-3 col-xxl-2">
           <h4 className="link-title">Connect</h4>
           <Link to="" className='f-link'>
             <p className="footer-link">Facebook</p>
