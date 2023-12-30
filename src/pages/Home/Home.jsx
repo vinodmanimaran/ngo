@@ -171,7 +171,7 @@ const Home = () => {
     </div>
   </div>
   <div className="row">
-  <div className="col col-12 col-xxl-6 " style={{border:"1px solid black"}}>
+  <div className="col col-12 col-xxl-6 ">
 <h1 className='main-service-title'>Some services we provide for our children</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 

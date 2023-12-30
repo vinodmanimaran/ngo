@@ -359,11 +359,9 @@ padding: 0.3rem;
     max-width: 200%;
   } */
   .content{
-    border: 1px solid black;
     margin-bottom: 1rem;
   }
   .about-img{
-    border: 1px solid black;
 
     margin-left: 10%;
     max-width: 100%;
@@ -379,8 +377,7 @@ margin: 3rem !important;
   }
 
   .services{
-    border: 1px solid black;
-    width: 43rem;
+    width:57rem;
   }
 
   .about-content{
