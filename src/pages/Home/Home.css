@@ -13,6 +13,21 @@
   font-size: 40px;
 }
 
+
+.supporter-line{
+  margin-left: -23rem;
+}
+
+.icon-bg{
+  background-color: white;
+  display: inline-block;
+  padding:10px;
+  height: 50px;
+  border-radius:5px ;
+  width: 50px;
+  margin: 1rem;
+}
+
 .cta-image{
   margin: 1rem;
   width: 80rem;
@@ -32,10 +47,12 @@
 
 .supporters{
   padding: 1rem;
- transform: translateX(10%);
+
 }
 .supporter{
   margin: 1rem;
+  width: 65rem;
+
 }
 .below{
     position: absolute;
@@ -79,6 +96,8 @@ left: 5%;
     font-weight: bold;
     text-align: center;
     font-size: 12px;
+
+    margin-left: 10rem;
 }
 
 .content{
@@ -122,27 +141,55 @@ width:30rem;
     color: white;
 }
 
-
+.about-name{
+  font-size: 48px;
+  line-height: 1.2;
+}
 
 .about-title{
     font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: -22rem;
+    color: #1D2130;
 }
 
 .about-content{
     padding: 5rem;
 }
+
+
+.about-name{
+  padding: 2rem;
+  margin-left: -12rem;
+
+}
+.about-image-box{
+  margin: 3rem;
+  margin-left: -2rem;
+}
 .para{
     padding: 2rem;
-    margin-left: -1rem;
+        font-size: 16px;
+        margin-left: -12rem;
+    line-height: 1.6;
 }
 .about-img{
     max-width: 100%;
     border-radius: 10px;
 }
-
+.about-title-line{
+  width: 20%;
+  margin-top: 0.5rem;
+}
 
 .supporter{
     padding: 3rem;
+    border: 1px solid black ;
+}
+
+.supporters{
+
 }
 .services{
     padding: 3rem;
@@ -157,9 +204,11 @@ width:30rem;
 }
 
 .service-title{
-    font-size: 1rem;
+    font-size: 24px;
 }
-
+.service-text{
+  font-size: 16px;
+}
 .service-img{
     max-width: 100%;
     border-radius: 10px;
@@ -277,7 +326,7 @@ width:30rem;
   }
   
   .cta-img {
-    width: 100%; /* Adjust the width as needed */
+    width: 100%; 
     height: auto;
   }
   
@@ -292,6 +341,7 @@ width:30rem;
     margin: 2rem;
     padding: 0.8rem;
     width: 10rem;
+    margin-left: -10%;
     white-space: nowrap;
     background-color: #F2C94C;
     border: none;
@@ -302,7 +352,7 @@ width:30rem;
     margin-top: 30px;
     border: none;
     width: 10rem;
-    transform: translateX(150%);
+    transform: translateX(90%);
   }
 
   
@@ -319,21 +369,23 @@ width:30rem;
   }
 
   .title-event{
-    font-size: 24px;
+    font-size:16px;
     margin-top: -30%;
     margin-left: -6%;
+    color: #1D2130;
 }
 
 .event-hr{
 margin-top: -90%;
 width: 70%;
 margin-left: 6.5rem;
+color: #1D2130;
 
 }
 
 .event-name{
     margin-top: -20%;
-    font-size: 20px;
+    font-size: 28px;
     margin-left:2rem;
 }
 
@@ -354,6 +406,21 @@ margin-left: 6.5rem;
   }
 .date-event-no,.date-event-mon{
 margin-left: -5%;
+line-height: 1.2;
+
+}
+
+
+.data-text{
+  color: white;
+}
+.date-event-no{
+  font-size: 48px;
+}
+
+.date-event-mon{
+  text-transform: uppercase ;
+  font-size: 16px;
 }
 
   @media (max-width: 575.98px) {
@@ -365,13 +432,17 @@ margin-left: -5%;
 
     }
 .title-event{
-  margin-top: -7rem;
-  margin-left: 5rem;
+  margin-top: -5rem;
+  margin-left: 8.5rem;
+  text-transform: uppercase;
   margin-bottom: 2rem !important;
+  line-height: 1.5;
 }
 .event-name{
-  margin-left: 2rem;
+  font-weight: bold;
   margin-top: -40px;
+  line-height: 1.5;
+
   /* font-size: 18px; */
 }
 
@@ -399,8 +470,6 @@ padding: 0.3rem;
     margin-bottom: 1rem;
   }
   .about-img{
-
-    margin-left: 10%;
     max-width: 100%;
   }
 
@@ -418,7 +487,7 @@ margin: 3rem !important;
   }
 
   .about-content{
-    width: 43rem;
+    /* width: 43rem; */
     margin-left: -20%;
   }
   .service-img{
@@ -426,7 +495,7 @@ margin: 3rem !important;
   }
 
   .projects{
-    width: 43rem;
+    width: 65rem;
   }
 .project-details
 {
@@ -445,7 +514,7 @@ margin: 3rem !important;
 
   .chart-content{
     padding: 1rem;
-    margin-left: -18%;
+    margin-left: -10%;
   }
 .cta-image{
     width: 65rem;
@@ -458,9 +527,15 @@ margin-left: -3%;
 }
 
 .pie{
-    margin-top: -2%;
-    transform:translateY(-60%) !important ;
+  margin-top: -2%;
+  margin-left: -20%;
+    transform:translateY(-50%) !important ;
     transform: translateX(60%) !important;
+}
+
+.row-data-text{
+  display: flex;
+  flex-direction: row;
 }
 
 .main-header{
@@ -471,15 +546,19 @@ margin-left: -3%;
     border: 1px solid black;
 }
 .circle-icon{
-  margin-top: -55%;
-  margin-left: 9rem;
+  margin-top: -20%;
+  margin-left: 35rem;
 }
 .event-card{
-  width: 50rem
+  width: 40rem !important;
+  border-radius: 20px;
+  transform: translateX(-10%);
 }
-
+.event-cards{
+  width: 60rem;
+}
 .date-event-no,.date-event-mon{
-  margin-left: -30px;
+  margin-left: -10px;
 }
 .home-page{
   overflow: visible;
@@ -487,6 +566,22 @@ margin-left: -3%;
 .desktop{
   display: none;
 }
+.event-hr{
+  border: 1px solid black;
+  margin-top: -12%;
+  font-weight: bold;
+  width: 4rem;
+  margin-left: 16rem;
+
+}
+
+.about-content{
+  margin: 1rem;
+  width: 64rem;
+}
+
+
+
   }
   
   

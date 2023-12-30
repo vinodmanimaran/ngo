@@ -13,6 +13,7 @@ import CTA from '../../assets/cta.jpg'
 import { BsArrowRight } from 'react-icons/bs';
 import { MdOutlinePlayCircle } from "react-icons/md";
 
+import { FaHeart, FaStethoscope, FaGraduationCap, FaComments } from 'react-icons/fa';
 
 import { Pie } from 'react-chartjs-2';
 import {Chart, ArcElement} from 'chart.js'
@@ -108,10 +109,10 @@ const Home = () => {
 
     </div>
   </div>
-  <div className="row">
+  <div className="row about-text">
     <div className="col content col-xxl-6 col-12"> 
 
-<h1>We provide a place for children with special needs</h1>
+<h1 className='about-name'>We provide a place for children with special needs</h1>
 <div className="para">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
 
@@ -122,7 +123,7 @@ const Home = () => {
 </div>
 
 
-    <div className="col   col-xxl-4 col-12">
+    <div className="col   col-xxl-4 col-12 about-image-box">
       <img src={About} alt='about' className='about-img'/>
     </div>
   </div>
@@ -137,22 +138,22 @@ const Home = () => {
 
   </div>
   <div className="col col-xxl-6">
-    <hr/>
+    <hr className='supporter-line'/>
   </div>
 </div>
 <div className="row supporters ">
-<div className="col logo gx-1 col-2 col-xxl-1">
+<div className="col logo gx-1 col-1 col-xxl-1">
     <img src={Logo} alt='suppporter' className='sup-logo'/>
   </div>
-  <div className="col logo col-2  col-xxl-1">
+  <div className="col logo col-1  col-xxl-1">
     <img src={Logo} alt='suppporter' className='sup-logo'/>
-  </div><div className="col logo col-2 col-xxl-1" >
+  </div><div className="col logo col-1 col-xxl-1" >
     <img src={Logo} alt='suppporter' className='sup-logo'/>
-  </div><div className="col logo col-2 col-xxl-1" >   
+  </div><div className="col logo col-1 col-xxl-1" >   
     <img src={Logo} alt='suppporter' className='sup-logo'/>
-  </div><div className="col logo col-2 col-xxl-1">
+  </div><div className="col logo col-1 col-xxl-1">
     <img src={Logo} alt='suppporter' className='sup-logo'/>
-  </div><div className="col logo col-2 col-xxl-1">
+  </div><div className="col logo col-1 col-xxl-1">
     <img src={Logo} alt='suppporter' className='sup-logo'/>
   </div>  
 </div>
@@ -171,41 +172,57 @@ const Home = () => {
     </div>
   </div>
   <div className="row">
-  <div className="col col-12 col-xxl-6 ">
-<h1 className='main-service-title'>Some services we provide for our children</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+      <div className="col col-12 col-xxl-6">
+        <h1 className='main-service-title'>Some services we provide for our children</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 
-<div className="service">
-  <h3 className='service-title'>Family support</h3>
-  <p className='service-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
-  <h3 className='service-title'>Health benefits</h3>
-  <p className='service-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+        <div className="service">
+          <h3 className='service-title'>
+            <span className="icon-bg">
+            <FaHeart />
+            </span>
+           Family support
+          </h3>
+          <p className='service-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
 
-  <h3 className='service-title'>Scholarships</h3>
-  <p className='service-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+          <h3 className='service-title'>
+            <span className="icon-bg">
+            <FaStethoscope />
+            </span>
+            Health benefits
+          </h3>
+          <p className='service-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
 
-  <h3 className='service-title'>Therapy</h3>
-  <p className='service-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+          <h3 className='service-title'>
+            <span className="icon-bg">
+            <FaGraduationCap />
+            </span>
+             Scholarships
+          </h3>
+          <p className='service-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
 
-</div>
-  </div>
+          <h3 className='service-title'>
+            <span className='icon-bg'><FaComments /></span>
+             Therapy
+          </h3>
+          <p className='service-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+        </div>
+      </div>
 
-
-
-  <div className="col  col-12 col-xxl-6">
-<img src={Kid}  alt='service' className="service-img"/>
-  </div>
-  </div>
+      <div className="col  col-12 col-xxl-6">
+        <img src={Kid} alt='service' className="service-img" />
+      </div>
+    </div>
  
 </div>
 
 <div className="projects">
 <div className="row project-card">
-    <div className="col col-xxl-3 col-6 ">
-<hr />
+    <div className="col col-xxl-3 col-3 ">
+<hr  className='project-hr'/>
 
     </div>
-    <div className="col col-6">
+    <div className="col col-9">
     <h3>Projects we have done</h3>
     </div>
 
@@ -242,7 +259,7 @@ const Home = () => {
 
 <div className="donation-chart">
       <div className="row">
-        <div className="col col-4 col-xxl-6">
+        <div className="col col-6 col-xxl-6">
           <div className="chart-content">
           <h5 className="donation-title">How we spend your donations and where it goes</h5>
           <p className="donation-para">
@@ -258,26 +275,26 @@ const Home = () => {
       </div>
 
       <div className="row-data">
-        <div className="row">
-        <div className="col col-3 ">
+        <div className="row-data-text">
+        <div className="col col-4">
     <span className='color child-care-home'></span>
-    <p>40% child care home</p>
+    <p className='data-text'>40% child care home</p>
   </div>
-  <div className="col col-3">
+  <div className="col col-4">
     <span className='color cleanliness-program'></span>
-    <p>35% cleanliness program</p>
+    <p className='data-text'>35% cleanliness program</p>
   </div>
-  <div className="col col-3">
+  <div className="col col-4">
     <span className='color helping-people'></span>
-    <p>10% helping people</p>
+    <p className='data-text'>10% helping people</p>
   </div>
-  <div className="col col-3">
+  <div className="col col-4">
     <span className='color excursions'></span>
-    <p>10% excursions</p>
+    <p className='data-text'>10% excursions</p>
   </div>
-  <div className="col col-3">
+  <div className="col col-4">
     <span className='color feeding-the-poor'></span>
-    <p>5% feeding the poor</p>
+    <p className='data-text'>5% feeding the poor</p>
   </div>
       </div>
       
