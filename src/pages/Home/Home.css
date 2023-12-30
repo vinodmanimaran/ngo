@@ -185,7 +185,7 @@ width:30rem;
 
 .supporter{
     padding: 3rem;
-    border: 1px solid black ;
+    width: 68rem;
 }
 
 .supporters{
@@ -281,6 +281,7 @@ width:30rem;
 
 .donation-chart{
     padding: 3rem;
+    margin-left: -10px;
 }
 
 
@@ -483,11 +484,12 @@ margin: 3rem !important;
   }
 
   .services{
-    width:66rem;
+    width:68.8rem;
   }
 
   .about-content{
-    /* width: 43rem; */
+    width:68.8rem;
+
     margin-left: -20%;
   }
   .service-img{
@@ -509,7 +511,7 @@ margin: 3rem !important;
   }
 
   .donation-chart{
-    width: 65rem;
+    width: 69.7rem;
   }
 
   .chart-content{
@@ -527,10 +529,8 @@ margin-left: -3%;
 }
 
 .pie{
-  margin-top: -2%;
-  margin-left: -20%;
-    transform:translateY(-50%) !important ;
-    transform: translateX(60%) !important;
+  margin-top: 1%;
+  margin-left: 15%;
 }
 
 .row-data-text{
