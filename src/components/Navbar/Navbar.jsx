@@ -18,23 +18,29 @@ const Navbar = () => {
   useEffect(() => {
     const handleResize = () => {
       const isMobileSize = window.innerWidth < 992;
-      setIsMobile(isMobileSize);
-
-      // Update the sidebar state based on the window width
-      setSidebarOpen(!isMobileSize);
+      const isScrolling = window.scrollY > 0;
+  
+      if (!isMobileSize && !isScrolling) {
+        setSidebarOpen(false);
+      }
     };
-
-    // Listen for window resize events
+  
+    const handleScroll = () => {
+      const isMobileSize = window.innerWidth < 992;
+      if (!isMobileSize) {
+        setSidebarOpen(false);
+      }
+    };
+  
     window.addEventListener('resize', handleResize);
-
-    // Initial call to set the initial state
-    handleResize();
-
-    // Remove the event listener when the component unmounts
+    window.addEventListener('scroll', handleScroll);
+  
     return () => {
       window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  
 
 // best way to track the sidebar with the help of localstorage
 
@@ -54,7 +60,7 @@ const Navbar = () => {
 
   return (
     <div className={`container-fluid nav-bar navbar   ${isSidebarOpen ? 'sidebar-open' : ''}`}>
-      <div className="row ">
+        <div className="row ">
         <div className="col col-xxl-2  col-1     nav-logo">
           <h5 style={{color:"black"}}>Vinod Kumar</h5>
         </div>
