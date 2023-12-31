@@ -61,7 +61,7 @@ const Navbar = () => {
   return (
     <div className={`container-fluid nav-bar navbar   ${isSidebarOpen ? 'sidebar-open' : ''}`}>
         <div className="row ">
-        <div className="col col-xxl-2  col-1     nav-logo">
+        <div className="col col-xxl-2  col-1   col-lg-2  nav-logo">
           <h5 style={{color:"black"}}>Vinod Kumar</h5>
         </div>
 
@@ -73,38 +73,39 @@ const Navbar = () => {
         </div>
 
         {!isMobile && (
-          <>
-            <div className="col gx-1  col-xxl-1 nav-item">
-              <Link to="/" className='link'>
-                <p>Home</p>
-              </Link>
-            </div>
-            <div className="col  gx-1    col-xxl-1 nav-item">
-              <Link to="/aboutus" className='link'>
-                <p>About us</p>
-
-              </Link>
-            </div>
-            <div className="col   gx-1   col-xxl-1  nav-item">
-              <Link to="/whatwedo" className='link'>
-                <p>What we do</p>
-              </Link>
-            </div>
-            <div className="col  gx-1   col-xxl-1  nav-item">
-              <Link to="/media" className='link'>
-                <p>Media</p>
-              </Link>
-            </div>
-            <div className="col  gx-1   col-xxl-1  nav-item">
-              <Link to="/contact" className='link'>
-                <p>Contact</p>
-              </Link>
-            </div>
-
-            <div className="col col-xxl-1  d-sm-none">
-              <button className='donate-btn donate-lg '>Donate</button>
-            </div>
-          </>
+         <div className="container-xl container-xxl ">
+         <div className="row justify-content-center">
+           <div className="col-xl-1 col-xxl-1 col-lg-1 nav-item">
+             <Link to="/" className="link">
+               <p>Home</p>
+             </Link>
+           </div>
+           <div className="col-xl-1  col-xxl-1 col-lg-1 nav-item">
+             <Link to="/aboutus" className="link">
+               <p>About us</p>
+             </Link>
+           </div>
+           <div className="col-xl-1  col-lg-1 col-xxl-1 nav-item">
+             <Link to="/whatwedo" className="link">
+               <p>What we do</p>
+             </Link>
+           </div>
+           <div className="col-xl-1 col-lg-1 col-xxl-1 nav-item">
+             <Link to="/media" className="link">
+               <p>Media</p>
+             </Link>
+           </div>
+           <div className="col-xl-1 col-lg-1 col-xxl-1 nav-item">
+             <Link to="/contact" className="link">
+               <p>Contact</p>
+             </Link>
+           </div>
+           <div className="col-xl-1 col-xxl-1  col-xl-3  btn-donate"> 
+             <button className="donate-btn">Donate</button>
+           </div>
+         </div>
+       </div>
+       
         )}
       </div>
       <hr className='nav-line' />
